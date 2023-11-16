@@ -1,11 +1,11 @@
 import TopBanner from "./components/TopBanner";
-
+import Header from "./components/Header";
 
 const App = () => {
   return (
-    <>
-      <TopBanner/>
-      <header className="bg-red-100 h-16">Header</header>
+    <div className="font-Pretendard text-techit-gray-300">
+      <TopBanner />
+      <Header />
       <div className="bg-blue-100 h-[400px]">Banner</div>
       <section className="mt-20 bg-green-100 max-w-screen-xl mx-auto px-6">
         <div className="bg-red-100 h-[64.5px]">KDT</div>
@@ -48,7 +48,7 @@ const App = () => {
       <footer className="mt-40 max-w-screen-xl mx-auto bg-gray-100 h-[418px]">
         footer
       </footer>
-    </>
+    </div>
   );
 };
 
