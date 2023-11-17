@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "techit-gray": {
           300: "#222222",
+          200: "#737373",
         },
       },
     },
