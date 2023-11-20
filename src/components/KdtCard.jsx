@@ -19,7 +19,7 @@ const KdtCard = ({ image, title, ing, desc, period }) => {
           {ing}
         </span>
         <h3 className="pt-4 py-2 text-xl font-semibold">{title}</h3>
-        <h5 className="text-xl">{desc}</h5>
+        <h5 className="text-sm">{desc}</h5>
         <div className="text-techit-gray-100 mt-4">{period}</div>
       </div>
     </div>
