@@ -46,6 +46,8 @@ const Banner = () => {
 
   const getCurrentPage = () =>
     setPage(sliderRef.current.innerSlider.state.currentSlide);
+    // 현재페이지 갱신을 위한 함수 바로아래 유즈이펙트에 적용시키면서 1000ms만큼 지연될수있는
+    // 버튼에 대해서 현재페이지를 바로 갱신함으로써 딜레이를 줄인다.
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -71,6 +73,7 @@ const Banner = () => {
         </Slider>
       </ul>
       <div className="absolute w-[1280px] px-6 left-1/2 -translate-x-1/2 bottom-6">
+        {/* traslate 가 자기크기만큼 이동시키는것 */}
         <div className="text-white text-bold bg-black bg-opacity-30 w-fit flex p-[5px] text-xs rounded-full gap-2 py-[5px] px-3">
           <button onClick={onClickPrev}>
           <PrevIcon />
